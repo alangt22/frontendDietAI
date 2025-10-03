@@ -25,7 +25,7 @@ export function DietGenerator({ data }: { data: DietData }) {
     setIsStreaming(true);
 
     try {
-      const response = await fetch("backenddietai-production.up.railway.app/plan", {
+      const response = await fetch("https://backenddietai-production.up.railway.app/plan", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
