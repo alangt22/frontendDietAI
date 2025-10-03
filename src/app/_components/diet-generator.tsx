@@ -25,7 +25,7 @@ export function DietGenerator({ data }: { data: DietData }) {
     setIsStreaming(true);
 
     try {
-      const response = await fetch("http://localhost:3333/plan", {
+      const response = await fetch("https://backend-diet-ai.vercel.app/plan", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
